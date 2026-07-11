@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBuddy | Area</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/icon.png" alt="MathBuddy Logo">
+            <span>MathBuddy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html" class="active">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Area Calculators</h1>
+    <p>Calculate the area of different geometric shapes using the formulas below.</p>
+</section>
+
+<div class="container">
+
+    <!-- Rectangle -->
+    <div class="card">
+        <h2>Rectangle</h2>
+        <p><strong>Formula:</strong> A = Length × Width</p>
+
+        <input type="number" id="rectLength" placeholder="Length">
+        <input type="number" id="rectWidth" placeholder="Width">
+
+        <button onclick="rectangleArea()">Solve</button>
+
+        <p id="rectangleAreaResult"></p>
+    </div>
+
+    <!-- Square -->
+    <div class="card">
+        <h2>Square</h2>
+        <p><strong>Formula:</strong> A = Side²</p>
+
+        <input type="number" id="squareSide" placeholder="Side Length">
+
+        <button onclick="squareArea()">Solve</button>
+
+        <p id="squareAreaResult"></p>
+    </div>
+
+    <!-- Triangle -->
+    <div class="card">
+        <h2>Triangle</h2>
+        <p><strong>Formula:</strong> A = ½ × Base × Height</p>
+
+        <input type="number" id="triangleBase" placeholder="Base">
+        <input type="number" id="triangleHeight" placeholder="Height">
+
+        <button onclick="triangleArea()">Solve</button>
+
+        <p id="triangleAreaResult"></p>
+    </div>
+
+    <!-- Circle -->
+    <div class="card">
+        <h2>Circle</h2>
+        <p><strong>Formula:</strong> A = πr²</p>
+
+        <input type="number" id="circleRadius" placeholder="Radius">
+
+        <button onclick="circleArea()">Solve</button>
+
+        <p id="circleAreaOutput"></p>
+    </div>
+
+    <!-- Parallelogram -->
+    <div class="card">
+        <h2>Parallelogram</h2>
+        <p><strong>Formula:</strong> A = Base × Height</p>
+
+        <input type="number" id="paraBase" placeholder="Base">
+        <input type="number" id="paraHeight" placeholder="Height">
+
+        <button onclick="parallelogramArea()">Solve</button>
+
+        <p id="parallelogramAreaResult"></p>
+    </div>
+
+    <!-- Trapezoid -->
+    <div class="card">
+        <h2>Trapezoid</h2>
+        <p><strong>Formula:</strong> A = ½ × (Base₁ + Base₂) × Height</p>
+
+        <input type="number" id="trapBase1" placeholder="Base 1">
+        <input type="number" id="trapBase2" placeholder="Base 2">
+        <input type="number" id="trapHeight" placeholder="Height">
+
+        <button onclick="trapezoidArea()">Solve</button>
+
+        <p id="trapezoidAreaResult"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MathBuddy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

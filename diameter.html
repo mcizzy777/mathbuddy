@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBuddy | Diameter</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/icon.png" alt="MathBuddy Logo">
+            <span>MathBuddy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html" class="active">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Circle & Diameter Calculators</h1>
+    <p>Use these calculators to solve circle-related measurements.</p>
+</section>
+
+<div class="container">
+
+    <div class="card-grid">
+
+        <!-- Diameter from Radius -->
+        <div class="card">
+            <h2>Diameter from Radius</h2>
+
+            <p><strong>Formula:</strong> D = 2 × r</p>
+
+            <input type="number" id="radius1" placeholder="Enter Radius">
+
+            <button onclick="diameterFromRadius()">Solve</button>
+
+            <p id="diameterResult"></p>
+        </div>
+
+        <!-- Radius from Diameter -->
+        <div class="card">
+            <h2>Radius from Diameter</h2>
+
+            <p><strong>Formula:</strong> r = D ÷ 2</p>
+
+            <input type="number" id="diameter1" placeholder="Enter Diameter">
+
+            <button onclick="radiusFromDiameter()">Solve</button>
+
+            <p id="radiusResult"></p>
+        </div>
+
+        <!-- Circumference -->
+        <div class="card">
+            <h2>Circumference</h2>
+
+            <p><strong>Formula:</strong> C = π × D</p>
+
+            <input type="number" id="diameter2" placeholder="Enter Diameter">
+
+            <button onclick="circumferenceFromDiameter()">Solve</button>
+
+            <p id="circumferenceResult"></p>
+        </div>
+
+        <!-- Diameter from Circumference -->
+        <div class="card">
+            <h2>Diameter from Circumference</h2>
+
+            <p><strong>Formula:</strong> D = C ÷ π</p>
+
+            <input type="number" id="circumference1" placeholder="Enter Circumference">
+
+            <button onclick="diameterFromCircumference()">Solve</button>
+
+            <p id="diameterCircResult"></p>
+        </div>
+
+        <!-- Area from Radius -->
+        <div class="card">
+            <h2>Area from Radius</h2>
+
+            <p><strong>Formula:</strong> A = πr²</p>
+
+            <input type="number" id="radius2" placeholder="Enter Radius">
+
+            <button onclick="areaFromRadius()">Solve</button>
+
+            <p id="circleAreaResult"></p>
+        </div>
+
+        <!-- Radius from Area -->
+        <div class="card">
+            <h2>Radius from Area</h2>
+
+            <p><strong>Formula:</strong> r = √(A ÷ π)</p>
+
+            <input type="number" id="circleArea" placeholder="Enter Area">
+
+            <button onclick="radiusFromArea()">Solve</button>
+
+            <p id="radiusAreaResult"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MathBuddy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBuddy | Volume</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/icon.png" alt="MathBuddy Logo">
+            <span>MathBuddy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html" class="active">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Volume Calculators</h1>
+    <p>Calculate the volume of common three-dimensional figures.</p>
+</section>
+
+<div class="container">
+
+    <!-- Cube -->
+    <div class="card">
+        <h2>Cube</h2>
+
+        <p><strong>Formula:</strong> V = s³</p>
+
+        <input type="number" id="cubeSide" placeholder="Enter Side Length">
+
+        <button onclick="cubeVolume()">Solve</button>
+
+        <p id="cubeResult"></p>
+    </div>
+
+    <!-- Cylinder -->
+    <div class="card">
+        <h2>Cylinder</h2>
+
+        <p><strong>Formula:</strong> V = πr²h</p>
+
+        <input type="number" id="cylinderRadius" placeholder="Radius">
+        <input type="number" id="cylinderHeight" placeholder="Height">
+
+        <button onclick="cylinderVolume()">Solve</button>
+
+        <p id="cylinderResult"></p>
+    </div>
+
+    <!-- Cone -->
+    <div class="card">
+        <h2>Cone</h2>
+
+        <p><strong>Formula:</strong> V = (1/3)πr²h</p>
+
+        <input type="number" id="coneRadius" placeholder="Radius">
+        <input type="number" id="coneHeight" placeholder="Height">
+
+        <button onclick="coneVolume()">Solve</button>
+
+        <p id="coneResult"></p>
+    </div>
+
+    <!-- Sphere -->
+    <div class="card">
+        <h2>Sphere</h2>
+
+        <p><strong>Formula:</strong> V = (4/3)πr³</p>
+
+        <input type="number" id="sphereRadius" placeholder="Radius">
+
+        <button onclick="sphereVolume()">Solve</button>
+
+        <p id="sphereResult"></p>
+    </div>
+
+    <!-- Rectangular Prism -->
+    <div class="card">
+        <h2>Rectangular Prism</h2>
+
+        <p><strong>Formula:</strong> V = Length × Width × Height</p>
+
+        <input type="number" id="prismLength" placeholder="Length">
+        <input type="number" id="prismWidth" placeholder="Width">
+        <input type="number" id="prismHeight" placeholder="Height">
+
+        <button onclick="prismVolume()">Solve</button>
+
+        <p id="prismResult"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MathBuddy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBuddy | Perimeter</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/icon.png" alt="MathBuddy Logo">
+            <span>MathBuddy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html" class="active">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Perimeter Calculators</h1>
+    <p>Calculate the perimeter or circumference of common geometric shapes.</p>
+</section>
+
+<div class="container">
+
+    <!-- Rectangle -->
+    <div class="card">
+        <h2>Rectangle</h2>
+
+        <p><strong>Formula:</strong> P = 2(L + W)</p>
+
+        <input type="number" id="rectPerLength" placeholder="Length">
+        <input type="number" id="rectPerWidth" placeholder="Width">
+
+        <button onclick="rectanglePerimeter()">Solve</button>
+
+        <p id="rectanglePerimeterResult"></p>
+    </div>
+
+    <!-- Square -->
+    <div class="card">
+        <h2>Square</h2>
+
+        <p><strong>Formula:</strong> P = 4 × Side</p>
+
+        <input type="number" id="squarePerSide" placeholder="Side Length">
+
+        <button onclick="squarePerimeter()">Solve</button>
+
+        <p id="squarePerimeterResult"></p>
+    </div>
+
+    <!-- Triangle -->
+    <div class="card">
+        <h2>Triangle</h2>
+
+        <p><strong>Formula:</strong> P = Side₁ + Side₂ + Side₃</p>
+
+        <input type="number" id="triSide1" placeholder="Side 1">
+        <input type="number" id="triSide2" placeholder="Side 2">
+        <input type="number" id="triSide3" placeholder="Side 3">
+
+        <button onclick="trianglePerimeter()">Solve</button>
+
+        <p id="trianglePerimeterResult"></p>
+    </div>
+
+    <!-- Circle -->
+    <div class="card">
+        <h2>Circle (Circumference)</h2>
+
+        <p><strong>Formula:</strong> C = 2πr</p>
+
+        <input type="number" id="circlePerRadius" placeholder="Radius">
+
+        <button onclick="circleCircumference()">Solve</button>
+
+        <p id="circlePerimeterResult"></p>
+    </div>
+
+    <!-- Parallelogram -->
+    <div class="card">
+        <h2>Parallelogram</h2>
+
+        <p><strong>Formula:</strong> P = 2(Base + Side)</p>
+
+        <input type="number" id="paraBasePer" placeholder="Base">
+        <input type="number" id="paraSidePer" placeholder="Side">
+
+        <button onclick="parallelogramPerimeter()">Solve</button>
+
+        <p id="parallelogramPerimeterResult"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MathBuddy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

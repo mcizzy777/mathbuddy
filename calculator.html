@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBuddy | Calculator</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/icon.png" alt="MathBuddy Logo">
+            <span>MathBuddy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html" class="active">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Calculator</h1>
+    <p>Perform basic and advanced mathematical operations.</p>
+</section>
+
+<div class="container">
+
+    <!-- Calculator -->
+    <div class="calculator-card">
+
+        <h2>Standard Calculator</h2>
+
+        <input
+            type="text"
+            id="calcDisplay"
+            class="display"
+            placeholder="Enter expression">
+
+        <div class="calculator-grid">
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/')">÷</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendValue('+')">+</button>
+
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="squareRoot()">√</button>
+
+            <button onclick="appendValue('**')">xʸ</button>
+
+            <button class="clear-btn" onclick="clearDisplay()">Clear</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Operations Table -->
+<div class="container">
+
+    <div class="card">
+
+        <h2>Supported Operations</h2>
+
+        <table class="formula-table">
+
+            <tr>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+
+            <tr><td>Addition</td><td>12 + 8</td></tr>
+            <tr><td>Subtraction</td><td>20 - 6</td></tr>
+            <tr><td>Multiplication</td><td>7 × 5</td></tr>
+            <tr><td>Division</td><td>18 ÷ 3</td></tr>
+            <tr><td>Percentage</td><td>50%</td></tr>
+            <tr><td>Square Root</td><td>√81</td></tr>
+            <tr><td>Exponent</td><td>2^5</td></tr>
+            <tr><td>Parentheses</td><td>(5 + 3) × 2</td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MathBuddy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
